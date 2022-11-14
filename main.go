@@ -19,7 +19,6 @@ type employee struct {
 
 func main() {
 	os.Remove("./mydata.db")
-	println("Hello")
 	mydb, err := sql.Open("sqlite3", "./mydata.db")
 	if err != nil {
 		println("Error Can not Open database....")
